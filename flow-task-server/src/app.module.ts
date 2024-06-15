@@ -9,6 +9,14 @@ import { NoteModule } from './note/note.module';
 import { multerOptions } from './utils/multer-option';
 import { MulterModule } from '@nestjs/platform-express';
 import { UploadModule } from './upload/upload.module';
+import { UserModule } from './user/user.module';
+import { AuthModule } from './auth/auth.module';
+import { Task } from './task/entities/task.entity';
+import { Project } from './project/entities/project.entity';
+import { Group } from './group/entities/group.entity';
+import { Todo } from './todo/entities/todo.entity';
+import { Note } from './note/entities/note.entity';
+import { User } from './user/entities/user.entity';
 
 @Module({
   imports: [
@@ -22,7 +30,7 @@ import { UploadModule } from './upload/upload.module';
       url: process.env.DB_URL,
       synchronize: true,
       useUnifiedTopology: true,
-      entities: [__dirname + '/**/*.entity{.ts,.js}'],
+      entities: [Task, Project, Group, Todo, Note, User],
     }),
     TaskModule,
     ProjectModule,
@@ -30,6 +38,8 @@ import { UploadModule } from './upload/upload.module';
     TodoModule,
     NoteModule,
     UploadModule,
+    UserModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
