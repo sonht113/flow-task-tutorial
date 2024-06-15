@@ -19,7 +19,7 @@ export class UploadController {
     return file;
   }
 
-  @Get(':imgpath')
+  @Get('/upload/:imgpath')
   seeUploadedFile(@Param('imgpath') image, @Res() res) {
     return res.sendFile(image, { root: './files' });
   }
