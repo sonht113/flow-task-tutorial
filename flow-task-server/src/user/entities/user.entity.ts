@@ -20,4 +20,10 @@ export class User {
 
   @Column()
   position: EnumPositionUser;
+
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  createdAt: Date;
+
+  @Column({ type: 'timestamp', default: null, nullable: true })
+  updatedAt: Date;
 }
