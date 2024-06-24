@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@tanstack/react-query':
+    specifier: ^5.45.1
+    version: 5.45.1(react@19.0.0-rc-cc1ec60d0d-20240607)
   '@types/node':
     specifier: ^20.14.5
     version: 20.14.5
@@ -26,6 +29,9 @@ dependencies:
   react-error-boundary:
     specifier: ^4.0.13
     version: 4.0.13(react@19.0.0-rc-cc1ec60d0d-20240607)
+  react-hook-form:
+    specifier: ^7.52.0
+    version: 7.52.0(react@19.0.0-rc-cc1ec60d0d-20240607)
   react-router-dom:
     specifier: ^6.23.1
     version: 6.23.1(react-dom@19.0.0-rc-cc1ec60d0d-20240607)(react@19.0.0-rc-cc1ec60d0d-20240607)
@@ -822,6 +828,19 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@tanstack/query-core@5.45.0:
+    resolution: {integrity: sha512-RVfIZQmFUTdjhSAAblvueimfngYyfN6HlwaJUPK71PKd7yi43Vs1S/rdimmZedPWX/WGppcq/U1HOj7O7FwYxw==}
+    dev: false
+
+  /@tanstack/react-query@5.45.1(react@19.0.0-rc-cc1ec60d0d-20240607):
+    resolution: {integrity: sha512-mYYfJujKg2kxmkRRjA6nn4YKG3ITsKuH22f1kteJ5IuVQqgKUgbaSQfYwVP0gBS05mhwxO03HVpD0t7BMN7WOA==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.45.0
+      react: 19.0.0-rc-cc1ec60d0d-20240607
+    dev: false
 
   /@types/babel__core@7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -2226,6 +2245,15 @@ packages:
       react: '>=16.13.1'
     dependencies:
       '@babel/runtime': 7.24.7
+      react: 19.0.0-rc-cc1ec60d0d-20240607
+    dev: false
+
+  /react-hook-form@7.52.0(react@19.0.0-rc-cc1ec60d0d-20240607):
+    resolution: {integrity: sha512-mJX506Xc6mirzLsmXUJyqlAI3Kj9Ph2RhplYhUVffeOQSnubK2uVqBFOBJmvKikvbFV91pxVXmDiR+QMF19x6A==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+    dependencies:
       react: 19.0.0-rc-cc1ec60d0d-20240607
     dev: false
 

@@ -13,7 +13,7 @@ const LayoutComponent = () => {
           <Suspense
             fallback={
               <div className="w-full h-screen flex justify-center items-center">
-                <span>Loading...</span>
+                <span className="text-center">Loading...</span>
               </div>
             }
           >

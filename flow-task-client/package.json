@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.45.1",
     "@types/node": "^20.14.5",
     "axios": "^1.7.2",
     "babel-plugin-react-compiler": "0.0.0-experimental-938cd9a-20240601",
@@ -17,6 +18,7 @@
     "react": "19.0.0-rc-cc1ec60d0d-20240607",
     "react-dom": "19.0.0-rc-cc1ec60d0d-20240607",
     "react-error-boundary": "^4.0.13",
+    "react-hook-form": "^7.52.0",
     "react-router-dom": "^6.23.1",
     "styled-components": "^6.1.11",
     "zustand": "^4.5.2"
